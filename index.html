@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <link rel="stylesheet" ; href="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.min.css">
+    <script src="https://unpkg.com/ng-table@2.0.2/bundles/ng-table.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-animate.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-sanitize.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+    <script type="text/javascript" src="device.js"></script>
+    <script type="text/javascript" src="supported_devices.json"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Cabin:400,500,600,bold" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow:regular,bold" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    <div>
+        <a class="button" ng-show="showAdd" ng-click="showAdd=false; showDiv=true ">
+        <span>ADD</span>
+    </a>
+        <div ng-show="showDiv">
+            <input class="addclas" type="text" placeholder="Branding" ng-model="newBranding">
+            <input class="addclas" type="text" placeholder="Device" ng-model="newDev">
+            <input class="addclas" type="text" placeholder="Model" ng-model="newModel">
+            <input class="addclas" type="text" placeholder="MarketingName" ng-model="newMar">
+            <a class="button" ng-click="addItem($data); showDiv=false; showAdd=true "><span>PUSH</span></a>
+        </div>
+        </br>
+        <table class="table" ng-table="tableParams" show-filter="true">
+            <tr ng-repeat="x in $data">
+                <td title="'Branding'" filter="{ Branding: 'text'}" sortable="'Branding'">
+                    {{ x.Branding }}
+                </td>
+                <td title="'Device'" filter="{ Device: 'text'}" sortable="'Device'">
+                    {{ x.Device }}
+                </td>
+                <td title="'Model'" filter="{ Model: 'text'}" sortable="'Model'">
+                    {{ x.Model }}
+                </td>
+                <td title="'MarketingName'" filter="{ MarketingName: 'text'}" sortable="'MarketingName'">
+                    {{ x.MarketingName }}
+                </td>
+                <td>
+                    <!-- <button style="color: green" ng-click="editItem($data)">Edit
+                    </button> -->
+                    <button class="btn" ng-click="open()">Edit</button>
+                    <div modal="showModal" close="cancel()">
+                        <div class="modal-header">
+                            <h4>Modal Dialog</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Example paragraph with some text.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-success" ng-click="ok()">Okay</button>
+                            <button class="btn" ng-click="cancel()">Cancel</button>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <button style="color: red" ng-click="deleteItem(x)">Remove
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
