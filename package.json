@@ -1,0 +1,25 @@
+{
+  "name": "arshak",
+  "version": "0.0.1",
+  "description": "blabla",
+  "main": "node.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "upper-case": "^1.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://student@192.168.68.187/home/student/Documents/mygit.git"
+  },
+  "keywords": [
+    "ghj"
+  ],
+  "author": "ghhg",
+  "license": "MIT"
+}
