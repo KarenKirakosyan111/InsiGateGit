@@ -1,0 +1,102 @@
+.root-content {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.seaBattleHeader {
+    font-size: 70px;
+    margin-top: 50px;
+    color: #e2ba3f;
+    text-align: center;
+    text-shadow: 2px 2px 0px #444;
+    transition: all linear 3.0s;
+}
+
+#login {
+    background-image: url("../images/seaBattle2.jpg");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#warningMessageStyle {
+    color: #e6280f;
+}
+
+.login-container {
+    position: relative;
+    width: 320px;
+    margin: 80px auto;
+    margin-top: 50px;
+    padding: 20px 40px 40px;
+    text-align: center;
+    background: #cde7e2;
+    border: 2px solid #ccc;
+}
+
+.login-container::before,
+.login-container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 3.5px;
+    left: 0;
+    background: #cde7e2;
+    /* background: #fff; */
+    z-index: -1;
+    -webkit-transform: rotateZ(5deg);
+    -moz-transform: rotateZ(5deg);
+    -ms-transform: rotateZ(5deg);
+    border: 2px solid #ccc;
+}
+
+.login-container::after {
+    top: 5px;
+    z-index: -2;
+    -webkit-transform: rotateZ(-3deg);
+    -moz-transform: rotateZ(-3deg);
+    -ms-transform: rotateZ(-3deg);
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto 30px;
+    border-radius: 100%;
+    border: 3px solid #aaa;
+    background-size: cover;
+    background-image: url("/images/pirat3.jpg");
+}
+
+.form-box input {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    height: 40px;
+    border: 1px solid #ccc;
+    ;
+    background: #fafafa;
+    transition: 0.2s ease-in-out;
+}
+
+.form-box input:focus {
+    outline: 0;
+    background: #eee;
+}
+
+.form-box input[type="text"] {
+    border-radius: 7px 7px 7px 7px;
+    /* text-transform: lowercase; */
+}
+
+.form-box button.login {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 7px 7px 7px 7px;
+}

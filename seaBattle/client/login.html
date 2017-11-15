@@ -1,0 +1,16 @@
+<div id="login" ng-controller="seaBattleController">
+    <h1 class="seaBattleHeader"> Welcome to SeaBattle! </h1>
+    <div class="container">
+        <div class="login-container">
+            <div class="avatar"></div>
+            <div class="form-box">
+                <label for="userName">Nick Name</label>
+                <div id="warningMessageStyle">
+                    <p ng-if="checkNickName" ng-bind="warningMessage" ng-style="{color: red}"></p>
+                </div>
+                <input id="userNick" required type="text" ng-model="userNick" name="userName" placeholder="Enter your nick name" />
+                <button class="btn btn-info btn-block login" ng-click="loginFn()" >Login</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,123 @@
+.clearqq {
+    background-color: #000;
+    opacity: 0.7;
+}
+
+.boatqq {
+    background-color: black;
+}
+
+.missqq {
+
+    background-image: url(../images/x.png);
+    background-size: cover;
+    opacity: 1;
+}
+
+.burnqq {
+    background-image: url(../images/WX_circle_red.png);
+    background-size: cover;
+    opacity: 1;
+}
+
+.hitqq {
+    background-image: url(../images/Roundel_of_Switzerland.svg);
+    background-size: cover;
+    opacity: 1;
+}
+
+.filledqq {
+    background-image: url(../images/ship.png);
+    background-size: cover;
+}
+
+.checkedqq {
+    background-image: url(../images/ship.png);
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.cellqq {
+    border: solid yellow;
+    width: 50px;
+    height: 50px;
+}
+
+.field1qq {
+    opacity: 0.7;
+    background-color: #6499ef;
+    display: inline-table;
+    border: 1px solid orange;
+}
+
+.field2qq {
+    opacity: 0.7;
+    background-color: #6499ef;
+    display: inline-table;
+    border: 1px solid orange;
+    margin-left: 100px;
+}
+
+.opaTable {
+    opacity: 0.4;
+}
+#tabelsDivqqContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tabelsDivqq {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#bodyidqq {
+
+    background-image: url("../images/seaBattle2.jpg");
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#headerIdqq {
+    color: #e2ba3f;
+    text-align: center;
+    font: 400 110px/1.0 'Just Another Hand', Helvetica, sans-serif;
+    text-shadow: 0px 3px 0px #5e5e5e, 0px 5px 0px #4d4d4d, 0px 7px 0px #3c3c3c, 0px 9px 0px #2b2b2b, 3px 8px 15px rgba(0, 0, 0, 0.1), 3px 8px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.btnqq {
+    /*outline: white solid 0.5px;*/
+    padding-top: 10px;
+    border-radius: 3px;
+    color: #e2ba3f;
+    /*color: rgba(206, 226, 27, 0.6);*/
+    border-color: rgb(206, 226, 27);
+    background: rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    text-align: center;
+    font: 400 40px/1.0 'Just Another Hand', Helvetica, sans-serif;
+    /*text-shadow: 0px 3px 0px #5e5e5e, 0px 5px 0px #4d4d4d, 0px 7px 0px #3c3c3c, 0px 9px 0px #2b2b2b, 3px 8px 15px rgba(0, 0, 0, 0.1), 3px 8px 5px rgba(0, 0, 0, 0.3);*/
+}
+
+.btnqq:hover {
+    background: rgba(0, 0, 0, 0.4);
+    color: rgba(206, 226, 27, 1);
+}
+
+#buttonDivqq {
+    margin-top: 30px;
+    display: flex;
+}
+
+.gameover {
+    color: #f48042;
+    text-align: center;
+    font: 400 110px/1.0 'Just Another Hand', Helvetica, sans-serif;
+    text-shadow: 0px 3px 0px #5e5e5e, 0px 5px 0px #4d4d4d, 0px 7px 0px #3c3c3c, 0px 9px 0px #2b2b2b, 3px 8px 15px rgba(0, 0, 0, 0.1), 3px 8px 5px rgba(0, 0, 0, 0.3);
+}

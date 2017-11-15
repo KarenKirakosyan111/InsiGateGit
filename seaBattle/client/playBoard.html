@@ -1,0 +1,47 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sea Battle AngularJS</title>
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/socket.io-client/dist/socket.io.js"></script>
+    <script type="text/javascript" src="bower_components/angular-socket-io/socket.js"></script>
+    <script type="text/javascript" src="./scripts/app.js"></script>
+    <script type="text/javascript" src="./scripts/ngScript/factory.js"></script>
+    <script type="text/javascript" src="./scripts/ngScript/service.js"></script>
+    <script type="text/javascript" src="./scripts/ngScript/controller.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Just+Another+Hand' rel='stylesheet' type='text/css'>
+</head>
+
+<body id="bodyid"> -->
+<div id="bodyidqq">
+    <h1 id="headerIdqq">SEA  BATTLE</h1>
+    <div id="tabelsDivqqContainer">
+        <div id="tabelsDivqq">
+            <table class="field1qq {{opaTable1}}">
+                <tr ng-repeat="row in ourField">
+                    <td ng-repeat="cell in row" class="cellqq {{cell.state}}" ng-click="yourShipCell(cell)">
+                    </td>
+                </tr>
+            </table>
+            <table class="field2qq {{opaTable2}}">
+                <tr ng-repeat="row in enemyField">
+                    <td ng-repeat="cell in row" class="cellqq {{cell.state}}" ng-click="toogleCell(cell)">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="buttonDivqq">
+            <button class="btnqq" ng-show="btnBeforStart" ng-click="onClickSubmit()">SUBMITE</button>
+            <button class="btnqq" ng-show="btnBeforStart" ng-click="onClickNew()">NEW</button>
+            <button class="btnqq" ng-show="btnBeforStart" ng-click="onClickRandom()">RANDOM</button>
+            <button class="btnqq" ng-show="btnBeforStart" ng-click="onClickStart()">STARTGAME</button>
+            <button class="btnqq" ng-show="btnAfterStart" ng-click="onClickResign()">RESIGN</button>
+        </div>
+        <div><h1 class="gameover">{{gameover}}</h1></div>
+    </div>
+</div>
+<!-- </body>
+
+</html> -->
